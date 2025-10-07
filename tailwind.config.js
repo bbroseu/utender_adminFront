@@ -1,0 +1,63 @@
+module.exports = {
+  content: [
+  './index.html',
+  './src/**/*.{js,ts,jsx,tsx}'
+],
+  theme: {
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        card: "var(--card)",
+        "card-foreground": "var(--card-foreground)",
+        primary: "var(--primary)",
+        "primary-hover": "var(--primary-hover)",
+        "primary-foreground": "var(--primary-foreground)",
+        secondary: "var(--secondary)",
+        "secondary-hover": "var(--secondary-hover)",
+        "secondary-foreground": "var(--secondary-foreground)",
+        muted: "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
+        accent: "var(--accent)",
+        "accent-foreground": "var(--accent-foreground)",
+        destructive: "var(--destructive)",
+        "destructive-hover": "var(--destructive-hover)",
+        "destructive-foreground": "var(--destructive-foreground)",
+        success: "var(--success)",
+        "success-foreground": "var(--success-foreground)",
+        warning: "var(--warning)",
+        "warning-foreground": "var(--warning-foreground)",
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+      },
+      borderRadius: {
+        sm: "var(--radius-sm)",
+        DEFAULT: "var(--radius)",
+        md: "var(--radius-md)",
+        lg: "var(--radius-lg)",
+        xl: "var(--radius-xl)",
+        "2xl": "var(--radius-2xl)",
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+        serif: ["var(--font-serif)"],
+        mono: ["var(--font-mono)"],
+      },
+      boxShadow: {
+        xs: "var(--shadow-xs)",
+        sm: "var(--shadow-sm)",
+        DEFAULT: "var(--shadow)",
+        md: "var(--shadow-md)",
+        lg: "var(--shadow-lg)",
+        xl: "var(--shadow-xl)",
+      },
+      transitionDuration: {
+        fast: "var(--transition-fast)",
+        DEFAULT: "var(--transition-normal)",
+        slow: "var(--transition-slow)",
+      },
+    },
+  },
+  plugins: [],
+}
