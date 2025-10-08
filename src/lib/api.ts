@@ -2,7 +2,7 @@ import axios, { AxiosInstance, AxiosError, InternalAxiosRequestConfig, AxiosResp
 
 // Create axios instance with base configuration
 const api: AxiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://192.168.10.209:3000/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://api.utender.eu/api',
   // baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000/api',  
   timeout: 10000,
   headers: {
