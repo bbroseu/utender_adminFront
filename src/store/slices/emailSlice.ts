@@ -15,8 +15,6 @@ export interface EmailState {
 
 export interface SendEmailToMemberRequest {
   memberId: number;
-  subject: string;
-  message: string;
 }
 
 export interface SendEmailToActiveRequest {
@@ -44,11 +42,8 @@ const initialState: EmailState = {
 // Async thunks
 export const sendEmailToMember = createAsyncThunk(
   'email/sendToMember',
-  async ({ memberId, subject, message }: SendEmailToMemberRequest) => {
-    const response = await api.post(`/emails/send-to-member/${memberId}`, {
-      subject,
-      message,
-    });
+  async ({ memberId }: { memberId: number }) => {
+    const response = await api.post(`/tenders/email/send-to-member/${memberId}`);
     return response.data;
   }
 );
