@@ -40,13 +40,13 @@ const initialState: EmailState = {
 };
 
 // Async thunks
-export const sendEmailToMember = createAsyncThunk(
-  'email/sendToMember',
-  async ({ memberId }: { memberId: number }) => {
-    const response = await api.post(`/tenders/email/send-to-member/${memberId}`);
-    return response.data;
-  }
-);
+// export const sendEmailToMember = createAsyncThunk(
+//   'email/sendToMember',
+//   async ({ memberId }: { memberId: number }) => {
+//     const response = await api.post(`/tenders/email/send-to-member/${memberId}`);
+//     return response.data;
+//   }
+// );
 
 export const sendEmailToActiveMembers = createAsyncThunk(
   'email/sendToActiveMembers',
